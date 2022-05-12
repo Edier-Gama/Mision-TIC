@@ -10,21 +10,18 @@ captcha = "6"
 
 #El sistema pide los datos de ingreso y los valida
 
-user = input(("Nombre de usuario: "))
+user = input(("Ingrese su nombre de usuario: "))
 
 if (user==name):
-  
-  print("Bien, ahora digite su contraseña")
-  
-  password_1= input(("Contraseña: "))
+   
+  password_1= input(("Digite su contraseña: "))
   
   if (password_1 == password):
-    print("Solucione el siguiente captcha")
     
-    captcha_solution = input(("¿Cuál es el resultado de 1 + 5? "))
+    captcha_solution = input(("CAPTCHA:¿Cuál es el resultado de 1 + 5? "))
     if (captcha_solution == captcha):
-      print("Sesión iniciada")
-      exit()
+      from menu import menu
+      menu()  
     else:
       print("Error")
       exit()
