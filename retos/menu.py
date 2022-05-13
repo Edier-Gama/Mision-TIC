@@ -1,21 +1,29 @@
 def menu ():
 
- var_menu = input("""
-   Bienvenido, elija una de las siguientes opciones: 
-         
+
+ print("""
+
     1 - Adivinanza
-    2 - Cerrar sesión
+    2 - Cerrar sesión 
+    
+    """
+ )
 
-""")
+ homepage = int(input("Elija una opcion: "))
 
-homepage = int(input(" "))
+ if ( homepage == 1):
 
-if ( homepage== 1):
-    print("Khe pro soi")
-elif (homepage == 2):
+    from adivinanza import adivinanza
+    adivinanza()
+
+ elif (homepage == 2):
+
+    print("Hasta pronto")
     exit()
-else: 
-    print("Digita alguna monda ombe")   
-exit()         
+
+ else: 
+    error = int(input("Digita una opción correcta: "))   
+    error = homepage
+ exit()         
 
 

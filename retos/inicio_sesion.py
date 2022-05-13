@@ -1,3 +1,4 @@
+
 #Se incia el programa dando una bienvenida
 
 print("Bienvenido al sistema de ubicación para zonas públicas WIFI")
