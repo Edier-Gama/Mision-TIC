@@ -8,7 +8,7 @@ def menu ():
     
     """
  )
-
+ contador = 0
  homepage = int(input("Elija una opcion: "))
 
  if ( homepage == 1):
@@ -16,14 +16,20 @@ def menu ():
     from adivinanza import adivinanza
     adivinanza()
 
- elif (homepage == 2):
+ if (homepage == 2):
 
     print("Hasta pronto")
     exit()
 
- else: 
-    error = int(input("Digita una opción correcta: "))   
-    error = homepage
- exit()         
+ while homepage > 2:
+    print("Error")
+    contador = contador + 1
+    error = int(input("Digita una opción correcta: "))  
+
+    if contador > 2:
+        print("Error")
+        break
+        exit()
+       
 
 

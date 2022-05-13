@@ -1,28 +1,33 @@
-import random
 def adivinanza():
+ import random
 
-    print( """
+ intentos = 0
+ numero_aleatorio = random.randint(0, 10)
+
+ print( """
     
-      Bienvenido al juego de adivinanzas, tendras que elegir
-      un numero entre el 1 y el 10, tu misión es adivinarlo
+      Bienvenido al juego de adivinanzas, tendrás que elegir
+      un número entre el 1 y el 10, tu misión es adivinarlo
 
       ¡Mucha Suerte!
     
     """
+ )
+ while intentos < 20:
+    numero = int(input("Ingresa un numero: "))
 
-    )
+    intentos = intentos + 1
 
-random_number = random.randint(0, 10)
-
-def intentos():
- numero = int(input("Ingresa un número al azar: "))
-
- if numero == random_number:
-    print("Adivinaste en x intentos")
- elif numero < random_number:
-    print("“!Estas por debajo¡")
- elif numero > random_number:
-    print("!Te pasaste¡")
-
- while not numero == random_number:
-    intentos()
+    if numero < numero_aleatorio:
+        print("¡Estas por debajo!")
+    if numero > numero_aleatorio:
+        print("¡Te pasaste!")
+    if numero < 0:
+        print("Estás fuera del intervalo")  
+    if numero > 10:
+        print("Estás fuera del intervalo")         
+    if numero == numero_aleatorio:
+        intentos = str(intentos)
+        print("¡Adivinaste en " + intentos + " intentos!")
+        break
+         
