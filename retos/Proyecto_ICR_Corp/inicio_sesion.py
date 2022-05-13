@@ -21,7 +21,7 @@ if (user==name):
     
     captcha_solution = input(("CAPTCHA:¿Cuál es el resultado de 1 + 5? "))
     if (captcha_solution == captcha):
-      from adivinanza_game import menu
+      from menu import menu
       menu()  
     else:
       print("Error")
