@@ -5,8 +5,8 @@ print("Bienvenido al sistema de ubicación para zonas públicas WIFI")
 
 #Se generan las variables predefinidas de inicio de sesión, el nombre corresponde al codigo del grupo y la contraseña al codigo del programa
 
-name = "51"
-password = "60"
+name = "60"
+password = "06"
 captcha = "6"
 
 #El sistema pide los datos de ingreso y los valida
