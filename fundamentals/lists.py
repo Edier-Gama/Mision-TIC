@@ -8,6 +8,7 @@ from imp import load_source
 
 
 list_nums = [1,3,4,5]
+list_nums = list((1,2,3,4))
 
 list_nums.insert(1, 2)
 print(list_nums)
@@ -32,3 +33,8 @@ list_nums.sort(reverse = True)
 # para saber el index de un elemento usamos el metodo .index("elemento")
 
 list_nums.index(3)
+
+#Para contar cuantos elementos de un cierto tipo hay en nuestra lista debemos
+#usar el método .count("valor")
+
+list_nums.count(2)
