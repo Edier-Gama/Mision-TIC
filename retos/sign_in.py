@@ -32,8 +32,8 @@ def run():
         {"Coordenadas: ": [coordenadas]}
     ]
 
+    print("Informacion registrada: ")
     for i in datos_finales:
-        print("Informacion registrada: ")
         print(i)
 
     exit()
