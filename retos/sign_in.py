@@ -22,20 +22,15 @@ def run():
 
 
     datos = []
-    datos.append([name, identification, email, coordenadas])
+    datos.append((name, identification, email, coordenadas))
 
-        
-    datos_finales = [
-        {"Nombre:  ": [name]},
-        {"Identificación: ": [identification]},
-        {"Correo electrónico: ": [email]},
-        {"Coordenadas: ": [coordenadas]}
-    ]
 
     print("Informacion registrada: ")
-    for i in datos_finales:
-        print(i)
-
+    for i in datos:
+        print(f" Nombre: {i[0]}")
+        print(f" Identificacion: {i[1]}")
+        print(f" Correo eléctrónico: {i[2]}")
+        print(f" coordenadas: {i[3]}")
     exit()
 
 
@@ -45,23 +40,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-        
-        
-
-
-
-        
-
-
-
-
-
-
-
-
-
-if __name__ == "__main__":
-    run()
