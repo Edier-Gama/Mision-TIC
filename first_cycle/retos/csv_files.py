@@ -16,7 +16,7 @@ def mayor(zona_p, area_p, zona_1, area_1, zona_2, area_2, zona_3, area_3):
 registros = []
 places = []
 
-with open("ar.csv", "r", encoding="utf-8") as archivo:
+with open("archivo.csv", "r", encoding="utf-8") as archivo:
      
      reader= csv.reader(archivo)
           
