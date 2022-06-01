@@ -11,8 +11,6 @@ def run():
     squares = [i for i in range (1, 1000) if i % 4 == 0]
     print(squares)
      
-   
-
 if __name__ == "__main__":
     run()
 

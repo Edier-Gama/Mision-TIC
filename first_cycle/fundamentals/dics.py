@@ -13,10 +13,5 @@ def run():
         print(key, "-", value)
 
 
-
-
-
- 
-
 if __name__ == "__main__":
     run()
