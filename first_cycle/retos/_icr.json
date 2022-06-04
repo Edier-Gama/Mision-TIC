@@ -1,0 +1,44 @@
+[
+    {
+        "coordenadas": [
+            {
+                "lat": 45
+            },
+            {
+                "lon": 52
+            }
+        ],
+        "correo": "felipe@ucaldas.edu.co",
+        "identificacion": 526684,
+        "nombre": "FELIPE MUNOZ",
+        "zona": "SUR"
+    },
+    {
+        "coordenadas": [
+            {
+                "lat": 36
+            },
+            {
+                "lon": 62
+            }
+        ],
+        "correo": "claudia@ucaldas.edu.co",
+        "identificacion": 95847,
+        "nombre": "CLAUDIA RAMIREZ",
+        "zona": "NORTE"
+    },
+    {
+        "coordenadas": [
+            {
+                "lat": 25
+            },
+            {
+                "lon": 48
+            }
+        ],
+        "correo": "alejandra@ucaldas.edu.co",
+        "identificacion": 547215,
+        "nombre": "ALEJANDRA SIERRA",
+        "zona": "ORIENTE"
+    }
+]

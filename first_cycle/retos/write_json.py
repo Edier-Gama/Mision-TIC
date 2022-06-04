@@ -1,47 +1,48 @@
-from asyncore import read
-import json
+
 import csv
+import json
+from os import write
+
+
 
 def run():
     
- registros = []
- nombres = []
- ids = []
- correos = []
- lat = []
- lon = []
- zona = [] 
- cabecera = []
-    
- with open("archivo.csv", "r", encoding="utf-8") as archivo:
+ icr_file = open("_icr.json", "w", encoding="utf-8")
+            
+ usuarios = [
      
-    reader= csv.reader(archivo)
-    
-    cabecera = next(reader)
-          
-    for line in reader:
-      registros.append(line)
-    
-    for linea in range(len(registros)):
-        nombres.append(registros[linea][0])
-        ids.append(registros[linea][1])
-        correos.append(registros[linea][2])
-        lat.append(registros[linea][3])
-        lon.append(registros[linea][4])
-        zona.append(registros[linea][5])
-        
-    for i in nombres:
-        datos = [
+            {
+             "nombre":"FELIPE MUNOZ",
+             "identificacion":526684,
+             "correo":"felipe@ucaldas.edu.co",
+             "coordenadas":[{"lat":45},{"lon":52}],
+             "zona":"SUR"
+            },
             
             {
-                "Nombre": i,
-                "Identificacion": registros[0][1]   
+             "nombre":"CLAUDIA RAMIREZ",
+             "identificacion": 95847,
+             "correo":"claudia@ucaldas.edu.co",
+             "coordenadas":[{"lat":36},{"lon":62}],
+             "zona":"NORTE"
+            },
+            
+            {
+             "nombre":"ALEJANDRA SIERRA",
+             "identificacion": 547215,
+             "correo":"alejandra@ucaldas.edu.co",
+             "coordenadas":[{"lat":25},{"lon":48}],
+             "zona":"ORIENTE"
             }
-        ]
             
-        
-        print(datos)
-            
+    ]
+      
+ cadena = json.dumps(usuarios, sort_keys=True, indent=4)
+           
+ icr_file.write(cadena)
+ 
+ icr_file.close()
 
+   
 if __name__ == "__main__":
     run()    
