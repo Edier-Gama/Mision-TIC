@@ -32,7 +32,10 @@ def run():
         print(f" Correo eléctrónico: {i[2]}")
         print(f" coordenadas: {i[3]}")
     exit()
-
+    
+    
+ 
+    
 
 if __name__ == "__main__":
     run()

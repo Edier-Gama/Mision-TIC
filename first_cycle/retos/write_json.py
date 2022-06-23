@@ -38,7 +38,7 @@ def run():
  icr_file.write(cadena)
  
  icr_file.close()
-
+ 
    
 if __name__ == "__main__":
     run()    
