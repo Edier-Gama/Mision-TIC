@@ -18,7 +18,9 @@ public class Pet {
 
     }
 
-
+    public void setName(String nombre){
+          this.name = nombre;
+    }
 
 
 }
