@@ -58,4 +58,11 @@ public class Pet {
     public void setHealthStatus(String healthStatus) {
         this.healthStatus = healthStatus;
     }
+
+    public String getFullPet(){
+        return "Su mascota se llama: " + this.name
+                + " nació en el año " + this.bornYear
+                + " Y el estado de salud es " + this.healthStatus;
+
+    }
 }

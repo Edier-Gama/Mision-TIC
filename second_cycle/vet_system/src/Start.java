@@ -17,5 +17,7 @@ public class Start {
         rocke.setBornYear(2020);
         rocke.setHealthStatus("Arañado pero bonito");
         rocke.setColor("Atigrado");
+
+        System.out.println(tina.getFullPet());
     }
 }
