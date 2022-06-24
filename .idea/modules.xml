@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/misiontic.iml" filepath="$PROJECT_DIR$/.idea/misiontic.iml" />
       <module fileurl="file://$PROJECT_DIR$/second_cycle/second_cycle.iml" filepath="$PROJECT_DIR$/second_cycle/second_cycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second_cycle/vet_system/vet_system.iml" filepath="$PROJECT_DIR$/second_cycle/vet_system/vet_system.iml" />
     </modules>
   </component>
 </project>
