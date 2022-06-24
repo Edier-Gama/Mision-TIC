@@ -5,6 +5,5 @@ public class Start {
         Pet mascota = new Pet();
 
         mascota.setName("Tina");
-        
     }
 }
