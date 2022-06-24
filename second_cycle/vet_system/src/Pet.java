@@ -9,7 +9,6 @@ public class Pet {
     public void Eat(){
 
     }
-
     public void Move(){
 
     }
@@ -19,16 +18,44 @@ public class Pet {
     }
 
     public void setName(String name){
-          this.name = name;
+        this.name = name;
     }
 
     public String getName(){
         return this.name;
     }
 
-    public void setColor(String color){
+
+    public void setColor(String color) {
         this.color = color;
     }
 
+    public String getColor(String color){
+        return this.color;
+    }
 
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public Integer getBornYear() {
+        return bornYear;
+    }
+
+    public void setBornYear(Integer bornYear) {
+        this.bornYear = bornYear;
+    }
+
+    public String getHealthStatus() {
+        return healthStatus;
+    }
+
+    public void setHealthStatus(String healthStatus) {
+        this.healthStatus = healthStatus;
+    }
 }
